@@ -33,3 +33,33 @@ func ExampleMax() {
 	// Output:
 	// 66
 }
+
+
+func ExampleMax2() {
+	payments := []types.Payment{
+		{
+			ID:     99,
+			Amount: 23,
+		},
+		{
+			ID:     24,
+			Amount: 45,
+		},
+		{
+			ID:     67,
+			Amount: 555,
+		},
+		{
+			ID:     3,
+			Amount: 555,
+		},
+		{
+			ID:     9,
+			Amount: 267,
+		},
+	}
+	max := Max(payments)
+	fmt.Println(max.ID)
+	// Output:
+	// 67
+}
